@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorbg"
+    android:layout_height="match_parent"
+    tools:context=".Confirm_Faculty_reg">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faculty Application Form"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="30dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_facultyId"
+                android:hint="Faculty ID"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_facultyName"
+                android:hint="Faculty Name"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_qualification"
+                android:hint="Qualification"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="20dp"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_faculty_gender"
+                android:hint="Gender"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="20dp"
+                android:textSize="18dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_dateofjoining"
+                android:hint="dateofjoining"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="20dp"
+                android:textSize="18dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_faculty_department"
+                android:hint="Department"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_faculty_MobileNo"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:hint="Mobile No"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_faculty_email"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"
+                android:hint="Email ID"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_faculty_address"
+                android:hint="Address"
+                android:textSize="18dp"
+                android:textColor="@color/colorText"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_faculty_confirm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#d67601"
+                    android:text="Confirm"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btn_confirm_faculty_cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#d67601"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

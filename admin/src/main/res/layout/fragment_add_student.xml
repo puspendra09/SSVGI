@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lv"
+    android:background="@color/colorbg"
+    tools:context=".Add_student">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Students Registration form"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="440dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:hint="Student Name"
+                    android:singleLine="true"/>
+
+
+                <EditText
+                    android:id="@+id/reg_studentname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="20dp"
+                    android:hint="Student Name"
+                    android:maxLength="20"
+
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawablePadding="20dp"
+                    android:hint="Father`s Name"
+                    android:id="@+id/reg_fathername"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawablePadding="20dp"
+                    android:hint="Mother`s Name"
+                    android:id="@+id/reg_mothername"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:text="Female" />
+
+
+                </RadioGroup>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Date of Birth"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_date_range_black_24dp"
+                    android:id="@+id/reg_dateofbirth"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:entries="@array/course"
+                    android:id="@+id/reg_coure"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="16dp"
+                    android:entries="@array/department"
+                    android:id="@+id/reg_department"
+                    android:textColor="#000"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="16dp"
+                    android:entries="@array/batch"
+                    android:id="@+id/reg_batch"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawablePadding="20dp"
+                    android:hint="Mobile No"
+                    android:id="@+id/reg_mobileno"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/reg_emailid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawablePadding="20dp"
+                    android:hint="Email Id"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawablePadding="20dp"
+                    android:hint="Address"
+                    android:id="@+id/reg_address"
+                    android:singleLine="true"
+                    android:inputType="textPostalAddress"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn_addstudent"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#d67601"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+
+                    <Button
+                        android:id="@+id/btn_cancelstudent"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#d67601"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

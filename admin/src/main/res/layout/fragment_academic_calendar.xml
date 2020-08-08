@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <CalendarView
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:id="@+id/mCalendar"
+       android:dateTextAppearance="@style/TextAppearance.AppCompat.Headline"
+       android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="140dp"
+      android:layout_marginTop="-80dp"
+      android:orientation="vertical">
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginLeft="25dp"
+       android:orientation="vertical"
+       android:id="@+id/ll_event">
+
+   </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>
+
+   <EditText
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:visibility="invisible"
+      android:id="@+id/hiddenEvent"/>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <EditText
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+         android:layout_weight="7"
+          android:hint="Enter Event"
+          android:textSize="24sp"
+          android:singleLine="true"
+          android:id="@+id/etEvent"
+         android:layout_marginLeft="20dp"/>
+
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Submit"
+       android:textAllCaps="false"
+       android:textSize="20sp"
+       android:layout_marginRight="20dp"
+       android:id="@+id/add_Calendar"/>
+
+   </LinearLayout>
+
+
+</LinearLayout>

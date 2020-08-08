@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SSVGI</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">UserID</string>
+    <string name="nav_header_subtitle">User Name</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_changePassword">Change Password</string>
+
+    <string name="menu_Dashboard">Dashboard</string>
+    <string name="menu_Attendance">Attendance</string>
+    <string name="menu_TimeTable">Time Table</string>
+    <string name="menu_LessonPlan">Lesson Plan</string>
+    <string name="menu_Marks">Marks</string>
+    <string name="menu_AcademicCalendar">Academic Calendar</string>
+    <string name="menu_StudentGrievance">Student Grievance</string>
+    <string name="menu_CreativeCell">Creative Cell</string>
+    <string name="menu_About">About</string>
+    <string name="menu_Logout">Logout</string>
+
+    <string name="title_activity_timetable2">Timetable2</string>
+    <string name="tab_text_1">Monday</string>
+    <string name="tab_text_2">Tuesday</string>
+    <string name="tab_text_3">Wednesday</string>
+    <string name="tab_text_4">Thrusday</string>
+    <string name="tab_text_5">Friday</string>
+    <string name="tab_text_6">Saturday</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

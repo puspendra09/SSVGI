@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ShowTimetable"></activity>
+        <activity
+            android:name=".UpdateTime_Table"
+            android:label="@string/title_activity_update_time__table"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddTimeTable" />
+        <activity
+            android:name=".Faculty_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student_deatils"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Loader"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Others"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SportsDay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Farewell"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Freasher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AnnualFest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Confirm_Faculty_reg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Confirm_Student_reg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EnterMarks">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:text="Enter Marks Subject-wise"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/mmname"
+        android:layout_marginLeft="30dp"
+        android:tooltipText="16dp"
+        android:textSize="16dp"
+        android:textColor="#000"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:entries="@array/examtype"
+        android:layout_gravity="center"
+        android:id="@+id/examtype"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subject1"
+        android:text="Programing in C"
+        android:textSize="18dp"
+        android:layout_marginRight="55dp"
+        android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="O Marks"
+            android:id="@+id/om1"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="T Marks"
+            android:id="@+id/tm1"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#F31010"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject2"
+            android:text="Data Strucure"
+            android:layout_marginRight="70dp"
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="O Marks"
+            android:inputType="number"
+            android:maxLength="3"
+            android:id="@+id/om2"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="T Marks"
+            android:inputType="number"
+            android:maxLength="3"
+            android:id="@+id/tm2"
+            android:textSize="18dp"
+            android:textColor="#F31010"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject3"
+            android:text="Computer Network"
+            android:textSize="18dp"
+            android:layout_marginRight="35dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="O Marks"
+            android:inputType="number"
+            android:maxLength="3"
+            android:id="@+id/om3"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="T Marks"
+            android:id="@+id/tm3"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="18dp"
+            android:textColor="#F31010"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject4"
+            android:text="Compiler Design"
+            android:layout_marginRight="50dp"
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="O Marks"
+            android:id="@+id/om4"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="T Marks"
+            android:inputType="number"
+            android:maxLength="3"
+            android:id="@+id/tm4"
+            android:textSize="18dp"
+            android:textColor="#F31010"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject5"
+            android:text="Database management\nSystem"
+            android:textSize="18dp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="O Marks"
+            android:id="@+id/om5"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="T Marks"
+            android:id="@+id/tm5"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="18dp"
+            android:textColor="#F31010"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Total obtain"
+            android:id="@+id/tvobtain"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Grand Marks"
+            android:id="@+id/tvtotal"
+            android:textSize="18dp"
+            android:textColor="#F31010"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#d67601"
+            android:text="Submit"
+            android:id="@+id/btn_Emarks_submit"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#d67601"
+            android:text="Cancel"
+            android:id="@+id/btn_Emarks_cancel"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
